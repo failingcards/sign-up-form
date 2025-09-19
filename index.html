@@ -3,47 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Form</title>
+    <title>Sign-Up Page</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="img">
+    <div class="background-container">
+        <img class="background" src="https://imagedelivery.net/c2SKP8Bk0ZKw6UDgeeIlbw/dcbf2962-892e-42bf-4349-72372596ce00/public" alt="jalen brunson background">
         <div class="logo"></div>
     </div>
-    <div class="message">
-        <p class="top-message">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p class="bottom-message">You <em>know</em> you want to.</p>
-    </div>
-    <div class="form-container">
-        <form>
-            <div class="inner-form">
-                <legend class="encourage">Let's do this!</legend>
-                <div class="names">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" id="last-name">
-                </div>
-                <div class="contact-info">
-                    <label for="email">EMAIL</label>
-                    <input type="email" id="email">
-                    <label for="phone-num">PHONE NUMBER</label>
-                    <input type="tel" id="phone-num">
-                </div>
-                <div class="passwords">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
-                    <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirm-password">
-                </div>
-            </div>
-            <div class="sign-up">
-                <button type="submit">Create Account</button>
-            </div>
-            <div>
-                <p class="log-in">Already have an account? <a class="log-in-link" href="#">Log in</a></p>
-            </div>
-        </form>
+    <div class="main">
+        <header class="header">
+            <p class="top-msg">Welcome to the ultimate New York Knicks fan community.</p>
+            <p class="middle-msg">Stay updated with the latest news, game recaps, and discussions about your favorite team in the Garden.</p>
+            <p class="bottom-msg">Sign up now and be part of the Knicks family.</p>
+        </header>
+        <div class="content">
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="inner-form">
+                        <p class="encourage">Let's do this!</p>
+                        <div class="name">
+                            <div class="field">
+                                <label for="first-name">first name</label>
+                                <input type="text" name="first-name" id="first-name" required>
+                            </div>
+                            <div class="field">
+                                <label for="last-name">last name</label>
+                                <input type="text" name="last-name" id="last-name" required>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <div class="field">
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+                            <div class="field">
+                                <label for="phone">phone number</label>
+                                <input type="tel" name="phone" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="password">
+                            <div class="field">
+                                <label for="password">password</label>
+                                <input type="password" name="password" id="password" min="3" required>
+                            </div>
+                            <div class="field">
+                                <label for="confirm-pass">confirm password</label>
+                                <input type="password" name="confirm-pass" id="confirm-pass" min="3" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button type="submit">Create Account</button>
+                        <p class="log-in">Already have an account? <a href="#">Log in</a></p>
+                    </div>
+                </form>   
+            </div>  
+        </div>
     </div>
 </body>
 </html>

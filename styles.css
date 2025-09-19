@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #F9FAFB;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+}
+
+.background {
+    height: 100vh;
+    display: flex;
+    margin-right: 10%;
+}
+
+.main {
+    margin-left: 2rem;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-top: 200px;
+}
+
+.middle-msg {
+    margin-bottom: 45px;
+}
+
+.form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    padding: 10px;
+}
+
+.inner-form {
+    background-color: #fff;
+    max-width: 70rem;
+    box-shadow: 0px 7.2px 7.2px hsl(0deg 0% 0% / 0.39);
+    padding: 25px;
+}
+
+.encourage {
+    font-weight: 450;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+div label {
+    text-transform: uppercase;
+    display: block;
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    color: #313235;
+}
+
+div input {
+    margin-bottom: 10px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    height: 30px;
+    width: 350px;
+    max-width: 350px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 1.5px 3.0px 3.0px hsl(0deg 0% 0% / 0.45);
+    outline: none
+}
+
+.name,
+.contact,
+.password {
+    display: flex;
+    gap: 5px;
+}
+
+.field {
+    flex: 1;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #0043A0;
+    color: white;
+    height: 3.5rem;
+    width: 250px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 3.5rem 0 3.5rem 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a56aa;
+}
+
+button:active {
+    background-color: #003c90;
+}
+
+.log-in {
+    font-size: 20px;
+}
+
+.log-in a {
+    text-decoration: none;
+}
+
+.log-in a:visited {
+    color: #0043A0
+}
+
+.log-in a:hover {
+    cursor: pointer;
+    color: #99b4d9;
+}
+
+.log-in a:active {
+    text-decoration: none;
+    color: #003680;
+}
